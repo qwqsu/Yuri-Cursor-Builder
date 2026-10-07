@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a labeled contact sheet from 8+ character reference images."""
+"""Create a labeled contact sheet from the supplied character reference images."""
 from __future__ import annotations
 
 import argparse
@@ -15,8 +15,6 @@ def main() -> int:
     ap.add_argument("--tile", type=int, default=320, help="thumbnail side length")
     ap.add_argument("images", nargs="+", type=Path)
     args = ap.parse_args()
-    if len(args.images) < 8:
-        ap.error(f"at least 8 reference images are required; got {len(args.images)}")
     if args.columns < 1 or args.tile < 64:
         ap.error("columns must be positive and tile must be at least 64")
 

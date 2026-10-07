@@ -4,7 +4,7 @@
 
 ## ① CHARACTER_CANON｜角色身份
 
-{{CHARACTER_CANON_FROM_8_PLUS_REFERENCES}}
+{{CHARACTER_CANON_FROM_USER_PROVIDED_REFERENCES}}
 
 ## ② STYLE_CANON｜系列画风
 
@@ -45,5 +45,5 @@ SPECIAL_REQUIREMENTS: preserve CHARACTER_CANON, STYLE_CANON, and all four locks
 ## 总生成提示词
 
 ```text
-使用我提供的全部角色参考图，综合提取共同 CHARACTER_CANON 与 STYLE_CANON。只在至少八张可读参考图的基础上锁定设定。严格遵循本文件的四层结构：CHARACTER_CANON、STYLE_CANON 与四个 CONSISTENCY_LOCKS 固定，只有 SCENE_VARIABLES 可以改变。生成透明背景的低分辨率像素 Windows 光标；角色在 32×32 尺寸仍需辨认，功能符号和热点优先清晰。不要把参考图中的场景文字、背景或一次性装饰误当成人物设定。不要美化、重设计、抗锯齿或补入未要求的物件。
+使用用户提供的全部可读取角色参考图，综合提取有依据的 CHARACTER_CANON 与 STYLE_CANON；不要求固定数量的参考图。参考较少或互相矛盾时，将不确定特征标为暂定，并先生成一张角色示例图供用户确认。严格遵循本文件的四层结构：CHARACTER_CANON、STYLE_CANON 与四个 CONSISTENCY_LOCKS 固定，只有 SCENE_VARIABLES 可以改变。用户确认角色示例图后，再生成透明背景的低分辨率像素 Windows 光标；角色在 32×32 尺寸仍需辨认，功能符号和热点优先清晰。不要把参考图中的场景文字、背景或一次性装饰误当成人物设定。不要美化、重设计、抗锯齿或补入未要求的物件。
 ```
