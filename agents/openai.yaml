@@ -1,0 +1,14 @@
+interface:
+  display_name: Yuri Cursor Builder
+  short_description: Create selectable pixel cursors and Windows schemes
+  default_prompt: Use $yuri-cursor-builder to make selectable character cursors and
+    a Windows mouse scheme.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
